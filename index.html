@@ -1,13 +1,28 @@
-<form method="post" enctype="multipart/form-data">
-  <div>
-    <label for="profile_pic">Choose file to upload</label>
-    <input
-      type="file"
-      id="profile_pic"
-      name="profile_pic"
-      accept=".ipa, .apk, .exe" />
+<div class="container">
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-8"><br><br>
+<div class="form-group">
+<div class="input-group">
+  <input type="text" class="form-control" readonly>
+<div class="input-group-btn">
+  <span class="fileUpload btn btn-success">
+      <span class="upl" id="upload">Upload single file</span>
+      <input type="file" class="upload up" id="up" onchange="readURL(this);" />
+    </span><!-- btn-orange -->
+ </div><!-- btn -->
+ </div><!-- group -->
+ </div><!-- form-group -->
+      <div class="form-group">
+<div class="input-group">
+  <input type="text" class="form-control" readonly>
+<div class="input-group-btn">
+  <span class="fileUpload btn btn-info">
+      <span class="upl" id="upload">Upload multiple file</span>
+      <input type="file" class="upload up" id="up" onchange="readURL(this);" multiple/>
+    </span><!-- btn-orange -->
+ </div><!-- btn -->
+ </div><!-- group -->
+ </div><!-- form-group -->
+      </div>
+    </div>
   </div>
-  <div>
-    <button>Submit</button>
-  </div>
-</form>
