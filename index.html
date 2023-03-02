@@ -12,14 +12,14 @@
     <script>document.getElementById("myinput").onclick= function() {
   var link = document.getElementById("linkinput").value;
   var data = {
-    "domain":"YOUR_DOMAIN",
+    "domain":"khoindvn.tk",
     "originalURL": link,
     "allowDuplicates": false };
 fetch('https://api.short.cm/links/public', {
    method: 'post',
    headers: (
      'accept': 'application/json',
-     'authorization': 'API_KEY'
+     'authorization': 'sk_cKq05kaVTfFbBGCr'
    },
    body: JSON.stringify(data)
 }) .then(function(response) { return response.json();
