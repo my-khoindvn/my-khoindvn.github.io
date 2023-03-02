@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link>
+</head>
+<body>
+    <h1 class="message">Shorten your first link!</h1>
+    <div>
+        <input name="text" type="url" value id="linkinput" placeholder="Paste a URL to shorten">
+        <input type="submit" id="myinput" value="Shorten">
+    </div>
+    <p id="message"></p>
+    <script>document.getElementById("myinput").onclick= function() {
+  var link = document.getElementById("linkinput").value;
+  var data = {
+    "domain":"YOUR_DOMAIN",
+    "originalURL": link,
+    "allowDuplicates": false };
+fetch('https://api.short.cm/links/public', {
+   method: 'post',
+   headers: (
+     'accept': 'application/json',
+     'authorization': 'API_KEY'
+   },
+   body: JSON.stringify(data)
+}) .then(function(response) { return response.json();
+  })
+  .then(function(data) {
+  document.getElementById("message").innerHTML = "Your short link is " + data. shortURL })
+  document.getElementById("linkinput").value='';
+}</script>
+</body>
+</html>
