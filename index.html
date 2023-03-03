@@ -8,18 +8,19 @@
         <input name="text" type="url" value id="linkinput" placeholder="Paste a URL to shorten">
         <input type="submit" id="myinput" value="Shorten">
     </div>
-    <p id="message"></p>    <script>document.getElementById("myinput").onclick= function() {
-var link = document.getElementById("linkinput").value;
-var data = {
-  "domain":"YOUR_DOMAIN",
+    <p id="message"></p>
+    <script>document.getElementById("myinput").onclick= function() {
+    var link = document.getElementById("linkinput").value;
+    var data = {
+  "domain":"khoindvn.tk",
   "originalURL": link,
   "allowDuplicates": false };
 fetch('https://api.short.cm/links/public', {
    method: 'post',
    headers: (
      'accept': 'application/json',
-     'authorization': 'API_KEY'
-   },
+     'authorization': 'pk_aRVvmxUaiRxUzsr6'
+   }, xd
    body: JSON.stringify(data)
 }) .then(function(response) { return response.json();
   })
