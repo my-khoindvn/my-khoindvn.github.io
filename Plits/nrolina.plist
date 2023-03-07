@@ -11,23 +11,19 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/my-khoindvn/my-khoindvn.github.io/releases/download/NRO/NRO.LINA.ipa</string>
-				</dict>
-				<dict>
-					<key>kind</key>
-					<string>display-image</string>
-					<key>needs-shine</key>
-					<true/>
-					<key>url</key>
-					<string>https://my-khoindvn.github.io/khoindvn.png</string>
+					<string>https://app.online-sign.vip/upload/2023-03-07/1-new-ipa-27ebef9de6d78e89d9bed194942119e6.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
-					<key>needs-shine</key>
-					<true/>
 					<key>url</key>
-					<string>https://my-khoindvn.github.io/khoindvn.png</string>
+					<string>AppIcon20x20</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>url</key>
+					<string>AppIcon60x60</string>
 				</dict>
 			</array>
 			<key>metadata</key>
@@ -35,13 +31,11 @@
 				<key>bundle-identifier</key>
 				<string>com.Zeno.khoindvn01</string>
 				<key>bundle-version</key>
-				<string>1</string>
+				<string>0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>NRO LINA
-
- @Khơindvn</string>
+				<string>NRO LINA</string>
 			</dict>
 		</dict>
 	</array>
